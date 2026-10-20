@@ -1,21 +1,30 @@
 {
   "name": "software-book",
   "version": "1.0.0",
-  "main": "index.js",
+  "homepage": "https://Priyeshnd555.github.io/software-book/",
+  "private": true,
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "predeploy": "BASE_PATH=/software-book/ vitepress build",
+    "deploy": "gh-pages -d dist --nojekyll"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "system-design",
+    "software-architecture",
+    "engineering",
+    "book"
+  ],
+  "author": "Priyesh ND",
   "license": "ISC",
-  "description": "",
+  "description": "The Anatomy of Software Systems: From First Principles to Resilient Architecture",
   "devDependencies": {
     "debug": "^4.4.3",
+    "gh-pages": "^6.3.0",
     "mermaid": "^11.17.2",
     "vitepress": "^1.6.4"
   }
