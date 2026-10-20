@@ -1,7 +1,7 @@
-# The Anatomy of Software Systems
-### *From First Principles to Resilient Architecture: A Domain-Driven Masterclass*
+# Systems Beyond the Code
+### *The Anatomy of Software Systems: From First Principles to Resilient Architecture*
 
-[![Deploy Book to GitHub Pages](https://github.com/actions/workflows/deploy.yml/badge.svg)](https://github.com)
+[![Deploy Book to GitHub Pages](https://github.com/Priyeshnd555/systems-beyond-the-code/actions/workflows/deploy.yml/badge.svg)](https://github.com/Priyeshnd555/systems-beyond-the-code)
 [![VitePress](https://img.shields.io/badge/built%20with-VitePress-4a88f7.svg)](https://vitepress.dev/)
 [![Mermaid](https://img.shields.io/badge/diagrams-Mermaid-ff3670.svg)](https://mermaid.js.org/)
 [![Status](https://img.shields.io/badge/chapters-42%2F42%20Complete-10b981.svg)](PROGRESS.md)
@@ -33,28 +33,25 @@ Open your browser at **[http://localhost:5173](http://localhost:5173)**. You wil
 
 ## 🚀 Publishing to GitHub Pages
 
-This repository is pre-configured with automated GitHub Actions CI/CD (`.github/workflows/deploy.yml`) to deploy to GitHub Pages on every push.
-
-### Step 1: Enable GitHub Actions for GitHub Pages
-1. Go to your repository on GitHub.
-2. Click **Settings** (gear icon) > **Pages** (under Code and automation in the left sidebar).
-3. Under **Build and deployment** > **Source**, select:
-   👉 **`GitHub Actions`** (do *not* select "Deploy from a branch").
-
-### Step 2: Push your code
-Push your code to your GitHub repository:
+### Option A: Direct Deploy via `npm run deploy` (Quickest)
+Run this single command:
 ```bash
-git add .
-git commit -m "feat: setup VitePress book reader and GitHub Pages workflow"
-git push origin master  # or git push origin main
+npm run deploy
 ```
+Then in GitHub repository **Settings** > **Pages** > **Build and deployment** > Source: `Deploy from a branch` > branch: `gh-pages`.
 
-### Step 3: View your live book
-GitHub Actions will automatically run the `Deploy Book to GitHub Pages` workflow. Once complete, your book will be live at:
+### Option B: Automated GitHub Actions CI/CD
+1. Create a repository on GitHub named: **`systems-beyond-the-code`**
+2. Push your code:
+```bash
+git remote add origin https://github.com/Priyeshnd555/systems-beyond-the-code.git
+git branch -M master
+git push -u origin master
 ```
-https://<your-github-username>.github.io/<your-repo-name>/
-```
-> **Note**: The VitePress base path is detected dynamically (`/<repo-name>/` in GitHub Actions and `/` locally), so links, styles, search, and diagrams work seamlessly both locally and on GitHub Pages!
+3. In GitHub repository **Settings** > **Pages** > Source: choose **`GitHub Actions`**.
+
+Your book will be published at:
+👉 **`https://Priyeshnd555.github.io/systems-beyond-the-code/`**
 
 ---
 

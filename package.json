@@ -1,7 +1,7 @@
 {
-  "name": "software-book",
+  "name": "systems-beyond-the-code",
   "version": "1.0.0",
-  "homepage": "https://Priyeshnd555.github.io/software-book/",
+  "homepage": "https://Priyeshnd555.github.io/systems-beyond-the-code/",
   "private": true,
   "scripts": {
     "dev": "vitepress dev",
@@ -10,18 +10,19 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "predeploy": "BASE_PATH=/software-book/ vitepress build",
+    "predeploy": "BASE_PATH=/systems-beyond-the-code/ vitepress build",
     "deploy": "gh-pages -d dist --nojekyll"
   },
   "keywords": [
     "system-design",
     "software-architecture",
     "engineering",
-    "book"
+    "book",
+    "systems-beyond-the-code"
   ],
   "author": "Priyesh ND",
   "license": "ISC",
-  "description": "The Anatomy of Software Systems: From First Principles to Resilient Architecture",
+  "description": "Systems Beyond the Code — The Anatomy of Software Systems: From First Principles to Resilient Architecture",
   "devDependencies": {
     "debug": "^4.4.3",
     "gh-pages": "^6.3.0",

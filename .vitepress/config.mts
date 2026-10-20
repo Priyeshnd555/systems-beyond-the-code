@@ -16,8 +16,8 @@ const getBase = () => {
 }
 
 export default defineConfig({
-  title: 'The Anatomy of Software Systems',
-  description: 'From First Principles to Resilient Architecture: A Domain-Driven Masterclass',
+  title: 'Systems Beyond the Code',
+  description: 'The Anatomy of Software Systems: From First Principles to Resilient Architecture',
   base: getBase(),
   outDir: 'dist',
   srcExclude: ['.prompt/**', 'node_modules/**', 'README.md'],
@@ -45,7 +45,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    siteTitle: '🏛️ Anatomy of Software Systems',
+    siteTitle: '🏛️ Systems Beyond the Code',
     logo: false,
 
     nav: [

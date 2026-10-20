@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "The Anatomy of Software Systems"
-  text: "From First Principles to Resilient Architecture"
+  name: "Systems Beyond the Code"
+  text: "The Anatomy of Software Systems"
   tagline: "A domain-driven masterclass taking engineers from understanding how software works to thinking and designing like Principal Software Architects."
   actions:
     - theme: brand
