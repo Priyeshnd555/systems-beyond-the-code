@@ -166,4 +166,4 @@ and fall back across channels gracefully.
 
 *How do Trie data structures and Inverted Indexes answer queries at the speed of human thought?*
 
-👉 **Next: [Chapter 21 — Standalone System: Distributed Search & Real-Time Autocomplete](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-21-system-distributed-search-autocomplete.md)**
+👉 **Next: [Chapter 21 — Standalone System: Distributed Search & Real-Time Autocomplete](/book/part-03-time-space-asynchrony/chapter-21-system-distributed-search-autocomplete.md)**

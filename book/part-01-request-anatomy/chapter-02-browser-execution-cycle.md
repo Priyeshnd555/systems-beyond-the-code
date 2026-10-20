@@ -125,4 +125,4 @@ Never measure page speed by when pixels appear; measure by Time to Interactive (
 
 *The backend servers didn't run out of CPU. What exhausted them?*
 
-👉 **Next: [Chapter 3 — When the Request Meets the Backend](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-03-request-meets-backend.md)**
+👉 **Next: [Chapter 3 — When the Request Meets the Backend](/book/part-01-request-anatomy/chapter-03-request-meets-backend.md)**

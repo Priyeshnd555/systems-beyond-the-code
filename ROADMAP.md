@@ -65,12 +65,12 @@ graph LR
 
 | Part | Focus & Domains | Case Studies & Core Patterns | Details Link |
 |---|---|---|---|
-| **Part 1** | Request Anatomy, Browser, HTTP, DNS | URL Shortener, Distributed Rate Limiter | [Part 1 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/01-part-1-request-anatomy.md) |
-| **Part 2** | Concurrency, Invariants, ACID, Ledgers | Banking, Tickets, E-Commerce, Audit Logs | [Part 2 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/02-part-2-concurrency-correctness.md) |
-| **Part 3** | Event-Driven, Queues, Geospatial | Chat, Ride-Hailing, Notifications, Search | [Part 3 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/03-part-3-time-space-asynchrony.md) |
-| **Part 4** | Media, Streaming, Feeds, Object Store | Video CDN, Social Feeds, Gaming Engine | [Part 4 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/04-part-4-media-search-edge.md) |
-| **Part 5** | Multi-Tenancy, Zero-Trust, Audits | Healthcare EHR, Enterprise SaaS, Gov Identity | [Part 5 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/05-part-5-trust-multitenancy.md) |
-| **Part 6** | Extreme Constraints, IoT, AI Agents | Trading Order Book, Edge Telemetry, AI Sandbox | [Part 6 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/06-part-6-extreme-constraints.md) |
-| **Part 7** | Synthesis, Chaos Drills, Trade-Offs | Planetary-Scale Omnichannel Blueprint | [Part 7 Roadmap](file:///Users/lspl487/Desktop/software-book/roadmap/07-part-7-synthesis-architecture.md) |
+| **Part 1** | Request Anatomy, Browser, HTTP, DNS | URL Shortener, Distributed Rate Limiter | [Part 1 Roadmap](/roadmap/01-part-1-request-anatomy) |
+| **Part 2** | Concurrency, Invariants, ACID, Ledgers | Banking, Tickets, E-Commerce, Audit Logs | [Part 2 Roadmap](/roadmap/02-part-2-concurrency-correctness) |
+| **Part 3** | Event-Driven, Queues, Geospatial | Chat, Ride-Hailing, Notifications, Search | [Part 3 Roadmap](/roadmap/03-part-3-time-space-asynchrony) |
+| **Part 4** | Media, Streaming, Feeds, Object Store | Video CDN, Social Feeds, Gaming Engine | [Part 4 Roadmap](/roadmap/04-part-4-media-search-edge) |
+| **Part 5** | Multi-Tenancy, Zero-Trust, Audits | Healthcare EHR, Enterprise SaaS, Gov Identity | [Part 5 Roadmap](/roadmap/05-part-5-trust-multitenancy) |
+| **Part 6** | Extreme Constraints, IoT, AI Agents | Trading Order Book, Edge Telemetry, AI Sandbox | [Part 6 Roadmap](/roadmap/06-part-6-extreme-constraints) |
+| **Part 7** | Synthesis, Chaos Drills, Trade-Offs | Planetary-Scale Omnichannel Blueprint | [Part 7 Roadmap](/roadmap/07-part-7-synthesis-architecture) |
 
-- **Cross-Domain Reference**: [Cross-Domain Matrix](file:///Users/lspl487/Desktop/software-book/roadmap/08-cross-domain-matrix.md)
+- **Cross-Domain Reference**: [Cross-Domain Matrix](/roadmap/08-cross-domain-matrix)

@@ -169,4 +169,4 @@ every state-modifying POST request must require an Idempotency Key.
 
 *How do you handle massive write contention on a single shared counter?*
 
-👉 **Next: [Chapter 12 — Flash Sales & Inventory Depletion: High-Concurrency Retail](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-12-flash-sales-inventory-depletion.md)**
+👉 **Next: [Chapter 12 — Flash Sales & Inventory Depletion: High-Concurrency Retail](/book/part-02-concurrency-correctness/chapter-12-flash-sales-inventory-depletion.md)**

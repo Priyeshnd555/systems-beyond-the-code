@@ -157,4 +157,4 @@ They are completely blind to concurrent requests arriving across multiple cloud 
 
 *How do you build a reservation engine that prevents double-booking, manages expiring seat holds, and survives network drops without locking up the database?*
 
-👉 **Next: [Chapter 9 — The Last Seat: Ticket Booking Architecture](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-09-ticket-booking-architecture.md)**
+👉 **Next: [Chapter 9 — The Last Seat: Ticket Booking Architecture](/book/part-02-concurrency-correctness/chapter-09-ticket-booking-architecture.md)**

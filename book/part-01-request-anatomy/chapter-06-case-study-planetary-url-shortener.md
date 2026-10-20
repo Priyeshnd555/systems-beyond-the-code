@@ -128,4 +128,4 @@ and letting edge caches absorb 90% of requests before they touch the origin.
 
 *How do you build a Distributed Rate Limiter that tracks sliding windows across an entire cluster without introducing race conditions?*
 
-👉 **Next: [Chapter 7 — Standalone System: Distributed Rate Limiter](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-07-system-distributed-rate-limiter.md)**
+👉 **Next: [Chapter 7 — Standalone System: Distributed Rate Limiter](/book/part-01-request-anatomy/chapter-07-system-distributed-rate-limiter.md)**

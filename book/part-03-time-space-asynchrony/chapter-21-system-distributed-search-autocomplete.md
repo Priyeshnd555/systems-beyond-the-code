@@ -165,5 +165,5 @@ We now possess the architectural mastery to coordinate time across drifting cloc
 
 *Why does the upload have to restart from byte zero, and how do content-addressable storage and chunking protocols make uploads unbreakable?*
 
-👉 **Next: [Part 4: Data at Rest and in Motion — Media, Feeds & The Edge](file:///Users/lspl487/Desktop/software-book/roadmap/04-part-4-media-search-edge.md)**
-👉 **Next Chapter: [Chapter 22 — The Anatomy of Large Data: Chunks, Checksums & Object Storage](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-22-anatomy-of-large-data-chunks-checksums.md)**
+👉 **Next: [Part 4: Data at Rest and in Motion — Media, Feeds & The Edge](/roadmap/04-part-4-media-search-edge.md)**
+👉 **Next Chapter: [Chapter 22 — The Anatomy of Large Data: Chunks, Checksums & Object Storage](/book/part-04-media-search-edge/chapter-22-anatomy-of-large-data-chunks-checksums.md)**

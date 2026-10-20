@@ -135,4 +135,4 @@ and turn the 14-hour outage war room into a 30-second trace inspection.
 
 *It unifies sub-millisecond trading order books, double-entry banking ledgers, ticket reservations, ride-hailing geospatial dispatch, streaming media, AI guardrails, and multi-region disaster recovery into a single, breathtaking architectural blueprint.*
 
-👉 **Next: [Chapter 42 — Grand Capstone: The Complete Planetary System Architecture Blueprint](file:///Users/lspl487/Desktop/software-book/book/part-07-synthesis-architecture/chapter-42-grand-capstone-planetary-blueprint.md)**
+👉 **Next: [Chapter 42 — Grand Capstone: The Complete Planetary System Architecture Blueprint](/book/part-07-synthesis-architecture/chapter-42-grand-capstone-planetary-blueprint.md)**

@@ -140,4 +140,4 @@ and let a single CPU core match trades at the speed of the L1 cache.
 
 *When 50,000 remote oil pipeline sensors disconnect for a month and suddenly reconnect simultaneously, how do you prevent an out-of-order data deluge from annihilating your cloud ingest clusters?*
 
-👉 **Next: [Chapter 35 — The Disconnected Sensor: IoT & Connected Devices](file:///Users/lspl487/Desktop/software-book/book/part-06-extreme-constraints/chapter-35-iot-edge-constrained-devices.md)**
+👉 **Next: [Chapter 35 — The Disconnected Sensor: IoT & Connected Devices](/book/part-06-extreme-constraints/chapter-35-iot-edge-constrained-devices.md)**

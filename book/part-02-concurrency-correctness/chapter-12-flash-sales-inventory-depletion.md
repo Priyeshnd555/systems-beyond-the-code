@@ -155,4 +155,4 @@ Issue tickets in memory, turn away the crowd outside, and let only ticket holder
 
 *How do you build a tamper-evident audit logging system that mathematically proves integrity even against rogue database administrators?*
 
-👉 **Next: [Chapter 13 — Standalone System: Tamper-Evident Audit Logging Engine](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-13-system-tamper-evident-audit-log.md)**
+👉 **Next: [Chapter 13 — Standalone System: Tamper-Evident Audit Logging Engine](/book/part-02-concurrency-correctness/chapter-13-system-tamper-evident-audit-log.md)**

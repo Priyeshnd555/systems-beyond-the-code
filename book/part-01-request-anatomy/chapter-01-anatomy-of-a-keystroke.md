@@ -126,4 +126,4 @@ No backend database optimization can recover time lost during socket negotiation
 
 *Yet when the shopper attempts to tap "Confirm Order", the button is completely unresponsive. The browser is frozen. Why?*
 
-👉 **Next: [Chapter 2 — The Browser Execution Cycle & Rendering Cost](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-02-browser-execution-cycle.md)**
+👉 **Next: [Chapter 2 — The Browser Execution Cycle & Rendering Cost](/book/part-01-request-anatomy/chapter-02-browser-execution-cycle.md)**

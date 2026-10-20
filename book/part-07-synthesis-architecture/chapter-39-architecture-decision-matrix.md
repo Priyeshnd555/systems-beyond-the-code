@@ -133,4 +133,4 @@ and only decompose into microservices when organizational scale demands it.
 
 *How do you build self-stabilizing systems using Chaos Engineering, bulkhead isolation, and automated blast-radius containment?*
 
-👉 **Next: [Chapter 40 — Chaos Engineering & The Failure Taxonomy](file:///Users/lspl487/Desktop/software-book/book/part-07-synthesis-architecture/chapter-40-chaos-engineering-failure-taxonomy.md)**
+👉 **Next: [Chapter 40 — Chaos Engineering & The Failure Taxonomy](/book/part-07-synthesis-architecture/chapter-40-chaos-engineering-failure-taxonomy.md)**

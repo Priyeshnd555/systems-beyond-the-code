@@ -155,4 +155,4 @@ and keep token lifetimes aggressively short.
 
 *How do you engineer healthcare architectures utilizing HL7/FHIR standards, patient consent graphs, and field-level envelope encryption with customer-managed keys?*
 
-👉 **Next: [Chapter 28 — The Leaked Health Record: Healthcare & Medical Architecture](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-28-healthcare-medical-systems.md)**
+👉 **Next: [Chapter 28 — The Leaked Health Record: Healthcare & Medical Architecture](/book/part-05-trust-multitenancy/chapter-28-healthcare-medical-systems.md)**

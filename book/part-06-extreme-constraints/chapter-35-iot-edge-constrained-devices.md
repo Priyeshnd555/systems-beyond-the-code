@@ -119,4 +119,4 @@ and control remote physical hardware through asynchronous Digital Device Shadows
 
 *When the core component of your architecture is a probabilistic neural network that cannot guarantee consistent outputs, how do you build deterministic guardrails, stateful agent graphs, and auditable sandboxes?*
 
-👉 **Next: [Chapter 36 — The Non-Deterministic Machine: AI Applications & Autonomous Agents](file:///Users/lspl487/Desktop/software-book/book/part-06-extreme-constraints/chapter-36-ai-agents-deterministic-guardrails.md)**
+👉 **Next: [Chapter 36 — The Non-Deterministic Machine: AI Applications & Autonomous Agents](/book/part-06-extreme-constraints/chapter-36-ai-agents-deterministic-guardrails.md)**

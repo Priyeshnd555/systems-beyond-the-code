@@ -158,4 +158,4 @@ and guard every progressive rollout with automated metric kill-switches.
 
 *How do you build financial order books and matching engines that process millions of limit orders in sub-microsecond time using lock-free ring buffers, zero-allocation memory pools, and kernel-bypass networking?*
 
-👉 **Next: [Chapter 34 — The Physics of Microseconds: Trading & Matching Engines](file:///Users/lspl487/Desktop/software-book/book/part-06-extreme-constraints/chapter-34-trading-matching-engines.md)**
+👉 **Next: [Chapter 34 — The Physics of Microseconds: Trading & Matching Engines](/book/part-06-extreme-constraints/chapter-34-trading-matching-engines.md)**

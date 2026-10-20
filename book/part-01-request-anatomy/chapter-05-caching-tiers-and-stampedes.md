@@ -128,12 +128,12 @@ it is a failure of architecture if more than one request touches the database.
 ## 6. The Milestone Awaits
 
 We have traced the foundational anatomy of software end-to-end:
-1. **Network Physics & Handshakes** ([Chapter 1](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-01-anatomy-of-a-keystroke.md))
-2. **Browser Rendering & Hydration** ([Chapter 2](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-02-browser-execution-cycle.md))
-3. **Ingress & Event Loops** ([Chapter 3](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-03-request-meets-backend.md))
-4. **Database Indexing & Disk I/O** ([Chapter 4](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-04-database-indexing-mechanics.md))
-5. **Multi-Tier Caching & Invalidation** ([Chapter 5](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-05-caching-tiers-and-stampedes.md))
+1. **Network Physics & Handshakes** ([Chapter 1](/book/part-01-request-anatomy/chapter-01-anatomy-of-a-keystroke.md))
+2. **Browser Rendering & Hydration** ([Chapter 2](/book/part-01-request-anatomy/chapter-02-browser-execution-cycle.md))
+3. **Ingress & Event Loops** ([Chapter 3](/book/part-01-request-anatomy/chapter-03-request-meets-backend.md))
+4. **Database Indexing & Disk I/O** ([Chapter 4](/book/part-01-request-anatomy/chapter-04-database-indexing-mechanics.md))
+5. **Multi-Tier Caching & Invalidation** ([Chapter 5](/book/part-01-request-anatomy/chapter-05-caching-tiers-and-stampedes.md))
 
 Now, we integrate these five building blocks into our first complete, production-grade system design.
 
-👉 **Next: [Chapter 6 — Complete Case Study: Designing a Planetary URL Shortener](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-06-case-study-planetary-url-shortener.md)**
+👉 **Next: [Chapter 6 — Complete Case Study: Designing a Planetary URL Shortener](/book/part-01-request-anatomy/chapter-06-case-study-planetary-url-shortener.md)**

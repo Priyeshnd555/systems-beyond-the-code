@@ -152,5 +152,5 @@ We now possess the complete foundational mental model of how packets, browsers, 
 
 *How does software maintain absolute correctness when multiple actors compete for the same state?*
 
-👉 **Next: [Part 2: Concurrency, Correctness & State — The Battle for Invariants](file:///Users/lspl487/Desktop/software-book/roadmap/02-part-2-concurrency-correctness.md)**
-👉 **Next Chapter: [Chapter 8 — The Ghost in the Machine: Race Conditions & Critical Sections](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-08-race-conditions-critical-sections.md)**
+👉 **Next: [Part 2: Concurrency, Correctness & State — The Battle for Invariants](/roadmap/02-part-2-concurrency-correctness.md)**
+👉 **Next Chapter: [Chapter 8 — The Ghost in the Machine: Race Conditions & Critical Sections](/book/part-02-concurrency-correctness/chapter-08-race-conditions-critical-sections.md)**

@@ -150,4 +150,4 @@ Never deploy a query without inspecting its 'EXPLAIN ANALYZE' output.
 
 *What is a Cache Stampede, and how do architects neutralize it?*
 
-👉 **Next: [Chapter 5 — Caching Tiers & The Cache Stampede](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-05-caching-tiers-and-stampedes.md)**
+👉 **Next: [Chapter 5 — Caching Tiers & The Cache Stampede](/book/part-01-request-anatomy/chapter-05-caching-tiers-and-stampedes.md)**

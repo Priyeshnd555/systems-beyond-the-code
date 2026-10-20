@@ -129,4 +129,4 @@ and proactively inject failure in production before reality tests you in the dar
 
 *How do you construct **Full-Spectrum Observability** using OpenTelemetry, distributed W3C trace propagation, high-cardinality metrics, and tail-based sampling to isolate root causes in seconds?*
 
-👉 **Next: [Chapter 41 — Full-Spectrum Observability & Production Readiness](file:///Users/lspl487/Desktop/software-book/book/part-07-synthesis-architecture/chapter-41-observability-production-readiness.md)**
+👉 **Next: [Chapter 41 — Full-Spectrum Observability & Production Readiness](/book/part-07-synthesis-architecture/chapter-41-observability-production-readiness.md)**

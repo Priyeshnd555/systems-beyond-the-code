@@ -139,4 +139,4 @@ and process societal claims through decoupled, append-only sovereign queues.
 
 *How do you engineer high-stakes offline-capable clients with cryptographic tamper-evident anti-cheat telemetry and lock-step state synchronization?*
 
-👉 **Next: [Chapter 31 — The High-Stakes Exam: Education & Examination Systems](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-31-education-online-examinations.md)**
+👉 **Next: [Chapter 31 — The High-Stakes Exam: Education & Examination Systems](/book/part-05-trust-multitenancy/chapter-31-education-online-examinations.md)**

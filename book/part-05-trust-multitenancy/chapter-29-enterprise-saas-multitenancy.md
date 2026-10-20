@@ -157,4 +157,4 @@ and enforce resource fairness at the connection pool.
 
 *How do you engineer high-concurrency public service platforms that operate in air-gapped sovereign environments and degrade gracefully under national load?*
 
-👉 **Next: [Chapter 30 — 50 Million Citizens: Government & Identity Platforms](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-30-government-identity-platforms.md)**
+👉 **Next: [Chapter 30 — 50 Million Citizens: Government & Identity Platforms](/book/part-05-trust-multitenancy/chapter-30-government-identity-platforms.md)**

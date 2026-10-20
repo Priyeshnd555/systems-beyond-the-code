@@ -128,4 +128,4 @@ who forgot to build the guardrail.
 
 *How do you build self-healing cloud control planes that reconcile desired state against reality without suffering catastrophic control-plane death spirals?*
 
-👉 **Next: [Chapter 37 — The Control Plane That Never Sleeps: Cloud Platforms](file:///Users/lspl487/Desktop/software-book/book/part-06-extreme-constraints/chapter-37-cloud-control-planes-reconciliation.md)**
+👉 **Next: [Chapter 37 — The Control Plane That Never Sleeps: Cloud Platforms](/book/part-06-extreme-constraints/chapter-37-cloud-control-planes-reconciliation.md)**

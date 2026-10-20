@@ -176,4 +176,4 @@ and protect durability with erasure coding rather than naive replication.
 
 *How do HLS, DASH, and Adaptive Bitrate (ABR) encoding transcode and slice video into dynamic edge streams?*
 
-👉 **Next: [Chapter 23 — The Spinning Wheel: Video & Audio Streaming Architecture](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-23-video-audio-streaming-architecture.md)**
+👉 **Next: [Chapter 23 — The Spinning Wheel: Video & Audio Streaming Architecture](/book/part-04-media-search-edge/chapter-23-video-audio-streaming-architecture.md)**

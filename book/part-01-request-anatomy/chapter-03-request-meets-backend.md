@@ -148,4 +148,4 @@ SELECT * FROM orders WHERE user_id = 'user_8829' ORDER BY created_at DESC;
 
 *Why did a simple query bring the cluster to its knees?*
 
-👉 **Next: [Chapter 4 — Database Indexing & The Illusion of Speed](file:///Users/lspl487/Desktop/software-book/book/part-01-request-anatomy/chapter-04-database-indexing-mechanics.md)**
+👉 **Next: [Chapter 4 — Database Indexing & The Illusion of Speed](/book/part-01-request-anatomy/chapter-04-database-indexing-mechanics.md)**

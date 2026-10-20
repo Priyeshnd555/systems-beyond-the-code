@@ -151,4 +151,4 @@ and let edge CDNs absorb 99.8% of planetary distribution.
 
 *How do social media architectures solve the Celebrity Problem and balance write amplification against query latency?*
 
-👉 **Next: [Chapter 24 — The Celebrity Problem: Social Media & Dynamic Feeds](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-24-social-media-dynamic-feeds.md)**
+👉 **Next: [Chapter 24 — The Celebrity Problem: Social Media & Dynamic Feeds](/book/part-04-media-search-edge/chapter-24-social-media-dynamic-feeds.md)**

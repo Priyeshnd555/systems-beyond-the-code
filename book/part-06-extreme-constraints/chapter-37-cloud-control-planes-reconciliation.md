@@ -129,4 +129,4 @@ and gate all automated self-healing with strict velocity circuit breakers.
 
 *How do you build a real-time stream analytics engine that ingests 500,000 events per second, computes tumbling and sliding time windows with millisecond accuracy, and provides instant OLAP queryability?*
 
-👉 **Next: [Chapter 38 — Standalone System: Real-Time Stream Analytics Engine](file:///Users/lspl487/Desktop/software-book/book/part-06-extreme-constraints/chapter-38-system-realtime-stream-analytics.md)**
+👉 **Next: [Chapter 38 — Standalone System: Real-Time Stream Analytics Engine](/book/part-06-extreme-constraints/chapter-38-system-realtime-stream-analytics.md)**

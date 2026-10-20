@@ -164,4 +164,4 @@ Isolate celebrities into on-demand pull streams and keep the push queue calm.
 
 *How do authoritative game servers, UDP networking, client-side prediction, and lag compensation maintain a shared virtual reality across erratic internet connections?*
 
-👉 **Next: [Chapter 25 — 60 Ticks per Second: Gaming & Real-Time Multiplayer Systems](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-25-gaming-multiplayer-systems.md)**
+👉 **Next: [Chapter 25 — 60 Ticks per Second: Gaming & Real-Time Multiplayer Systems](/book/part-04-media-search-edge/chapter-25-gaming-multiplayer-systems.md)**

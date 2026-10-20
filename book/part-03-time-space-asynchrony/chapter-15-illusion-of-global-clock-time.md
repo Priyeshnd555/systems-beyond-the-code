@@ -170,4 +170,4 @@ Use Lamport or Vector clocks for ordering across boxes.
 
 *How do you build a real-time messaging architecture that enforces conversational causality, syncs state across multiple devices, and delivers offline queues?*
 
-👉 **Next: [Chapter 16 — The Message That Arrived Yesterday: Chat & Collaboration](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-16-chat-collaboration-ordering.md)**
+👉 **Next: [Chapter 16 — The Message That Arrived Yesterday: Chat & Collaboration](/book/part-03-time-space-asynchrony/chapter-16-chat-collaboration-ordering.md)**

@@ -147,4 +147,4 @@ and reserve the database exclusively for permanent financial settlement.
 
 *How do financial architectures guarantee that money is neither created nor destroyed, and that retrying a failed request never results in double spending?*
 
-👉 **Next: [Chapter 10 — Where Did the Money Go? Double-Entry Ledgers & Banking Correctness](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-10-banking-ledgers-correctness.md)**
+👉 **Next: [Chapter 10 — Where Did the Money Go? Double-Entry Ledgers & Banking Correctness](/book/part-02-concurrency-correctness/chapter-10-banking-ledgers-correctness.md)**

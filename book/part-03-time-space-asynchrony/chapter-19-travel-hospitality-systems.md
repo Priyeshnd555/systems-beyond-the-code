@@ -145,4 +145,4 @@ Orchestrate sagas that favor graceful fallback and partial fulfillment over dest
 
 *How do you build a multi-channel Notification Engine that prioritizes emergency alerts, enforces per-user anti-fatigue limits, and guarantees delivery across carriers?*
 
-👉 **Next: [Chapter 20 — Standalone System: Planetary Notification Engine](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-20-system-planetary-notification-engine.md)**
+👉 **Next: [Chapter 20 — Standalone System: Planetary Notification Engine](/book/part-03-time-space-asynchrony/chapter-20-system-planetary-notification-engine.md)**

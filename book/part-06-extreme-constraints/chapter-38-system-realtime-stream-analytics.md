@@ -143,4 +143,4 @@ and persist to columnar stores for instant analytical clarity.
 
 *Welcome to the final summit: **Part 7 — The Master Architect: Trade-Offs, Chaos & The Grand Capstone Blueprint**.*
 
-👉 **Next: [Chapter 39 — The Architecture Decision Matrix: Trade-Offs Under Pressure](file:///Users/lspl487/Desktop/software-book/book/part-07-synthesis-architecture/chapter-39-architecture-decision-matrix.md)**
+👉 **Next: [Chapter 39 — The Architecture Decision Matrix: Trade-Offs Under Pressure](/book/part-07-synthesis-architecture/chapter-39-architecture-decision-matrix.md)**

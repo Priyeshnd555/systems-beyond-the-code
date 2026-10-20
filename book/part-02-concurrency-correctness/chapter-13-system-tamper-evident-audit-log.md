@@ -145,4 +145,4 @@ into a mathematical certainty.
 
 *How do you design a Distributed Job Queue that guarantees at-least-once execution, handles visibility timeouts, isolates poison-pill tasks, and scales to millions of background jobs?*
 
-👉 **Next: [Chapter 14 — Standalone System: Distributed Job Queue & Worker Pool](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-14-system-distributed-job-queue.md)**
+👉 **Next: [Chapter 14 — Standalone System: Distributed Job Queue & Worker Pool](/book/part-02-concurrency-correctness/chapter-14-system-distributed-job-queue.md)**

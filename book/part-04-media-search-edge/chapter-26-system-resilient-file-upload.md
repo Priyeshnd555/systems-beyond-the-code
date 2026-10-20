@@ -161,5 +161,5 @@ We now possess the architectural mastery to handle multi-gigabyte binary files, 
 
 *How do you engineer Zero-Trust perimeters, strict multi-tenant boundaries (Pool vs Silo), and HIPAA/GDPR compliance?*
 
-👉 **Next: [Part 5: Trust, Isolation & Compliance — Security, Multi-Tenancy & Edge Cases](file:///Users/lspl487/Desktop/software-book/roadmap/05-part-5-trust-multitenancy.md)**
-👉 **Next Chapter: [Chapter 27 — The Zero-Trust Perimeter: Authentication, Authorization & Boundaries](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-27-zero-trust-perimeters.md)**
+👉 **Next: [Part 5: Trust, Isolation & Compliance — Security, Multi-Tenancy & Edge Cases](/roadmap/05-part-5-trust-multitenancy.md)**
+👉 **Next Chapter: [Chapter 27 — The Zero-Trust Perimeter: Authentication, Authorization & Boundaries](/book/part-05-trust-multitenancy/chapter-27-zero-trust-perimeters.md)**

@@ -125,4 +125,4 @@ Stream answers as an append-only event log; network recovery is simply an event 
 
 *How do you build a zero-latency, highly resilient reverse proxy that validates millions of JWTs, terminates mTLS, enforces rate limits, and breaks cascading circuit failures?*
 
-👉 **Next: [Chapter 32 — Standalone System: Enterprise API Gateway & Edge Router](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-32-system-enterprise-api-gateway.md)**
+👉 **Next: [Chapter 32 — Standalone System: Enterprise API Gateway & Edge Router](/book/part-05-trust-multitenancy/chapter-32-system-enterprise-api-gateway.md)**

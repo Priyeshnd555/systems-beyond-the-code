@@ -158,4 +158,4 @@ an event log is the only forensics tool that can reconstruct the truth.
 
 *How do you build distributed travel aggregation engines that manage long-lived sagas across fragile legacy protocols?*
 
-👉 **Next: [Chapter 19 — The Multi-Leg Journey: Travel & Hospitality Systems](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-19-travel-hospitality-systems.md)**
+👉 **Next: [Chapter 19 — The Multi-Leg Journey: Travel & Hospitality Systems](/book/part-03-time-space-asynchrony/chapter-19-travel-hospitality-systems.md)**

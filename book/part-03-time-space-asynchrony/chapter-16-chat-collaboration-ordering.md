@@ -179,4 +179,4 @@ Always number messages per channel and buffer gaps on the client.
 
 *How do spatial indexing algorithms like Geohash, QuadTrees, and Uber H3 divide planet Earth into computational coordinates?*
 
-👉 **Next: [Chapter 17 — Where Is My Driver? Geospatial Indexing & Ride-Hailing](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-17-geospatial-indexing-ride-hailing.md)**
+👉 **Next: [Chapter 17 — Where Is My Driver? Geospatial Indexing & Ride-Hailing](/book/part-03-time-space-asynchrony/chapter-17-geospatial-indexing-ride-hailing.md)**

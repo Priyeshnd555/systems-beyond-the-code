@@ -169,4 +169,4 @@ you can only write a new entry that balances it.
 
 *How do distributed systems survive partial failures and make retries completely safe?*
 
-👉 **Next: [Chapter 11 — The Phantom Order: Idempotency & Partial Failures](file:///Users/lspl487/Desktop/software-book/book/part-02-concurrency-correctness/chapter-11-idempotency-partial-failures.md)**
+👉 **Next: [Chapter 11 — The Phantom Order: Idempotency & Partial Failures](/book/part-02-concurrency-correctness/chapter-11-idempotency-partial-failures.md)**

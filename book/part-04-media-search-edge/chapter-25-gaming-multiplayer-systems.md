@@ -156,8 +156,8 @@ and rewind historical buffers to make shooting feel fair.
 
 ## 8. The Milestone Awaits
 
-We have mastered large data chunks ([Ch 22](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-22-anatomy-of-large-data-chunks-checksums.md)), adaptive video streaming ([Ch 23](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-23-video-audio-streaming-architecture.md)), social media timeline fanout ([Ch 24](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-24-social-media-dynamic-feeds.md)), and real-time multiplayer simulation ([Ch 25](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-25-gaming-multiplayer-systems.md)).
+We have mastered large data chunks ([Ch 22](/book/part-04-media-search-edge/chapter-22-anatomy-of-large-data-chunks-checksums.md)), adaptive video streaming ([Ch 23](/book/part-04-media-search-edge/chapter-23-video-audio-streaming-architecture.md)), social media timeline fanout ([Ch 24](/book/part-04-media-search-edge/chapter-24-social-media-dynamic-feeds.md)), and real-time multiplayer simulation ([Ch 25](/book/part-04-media-search-edge/chapter-25-gaming-multiplayer-systems.md)).
 
 Now, we integrate these lessons into our next production-grade standalone system: **A Resilient File Upload & Distributed Object Storage Platform**.
 
-👉 **Next: [Chapter 26 — Standalone System: Resilient File Upload & Distributed Storage](file:///Users/lspl487/Desktop/software-book/book/part-04-media-search-edge/chapter-26-system-resilient-file-upload.md)**
+👉 **Next: [Chapter 26 — Standalone System: Resilient File Upload & Distributed Storage](/book/part-04-media-search-edge/chapter-26-system-resilient-file-upload.md)**

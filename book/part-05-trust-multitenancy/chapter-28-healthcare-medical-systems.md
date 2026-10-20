@@ -148,4 +148,4 @@ and audit every read operation.
 
 *How do you build multi-tenant architectures (Silo vs Pool vs Bridge) that neutralize the Noisy Neighbor problem and guarantee absolute tenant boundary isolation?*
 
-👉 **Next: [Chapter 29 — The Noisy Neighbor: Enterprise SaaS & Multi-Tenancy](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-29-enterprise-saas-multitenancy.md)**
+👉 **Next: [Chapter 29 — The Noisy Neighbor: Enterprise SaaS & Multi-Tenancy](/book/part-05-trust-multitenancy/chapter-29-enterprise-saas-multitenancy.md)**

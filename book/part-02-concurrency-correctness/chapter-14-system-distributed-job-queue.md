@@ -156,5 +156,5 @@ You now possess the foundational engineering discipline to ensure that under ext
 
 *How do distributed systems order events without relying on physical clocks?*
 
-👉 **Next: [Part 3: Time, Space & Asynchrony — Event-Driven Systems & Scalability](file:///Users/lspl487/Desktop/software-book/roadmap/03-part-3-time-space-asynchrony.md)**
-👉 **Next Chapter: [Chapter 15 — The Illusion of Global Clock Time](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-15-illusion-of-global-clock-time.md)**
+👉 **Next: [Part 3: Time, Space & Asynchrony — Event-Driven Systems & Scalability](/roadmap/03-part-3-time-space-asynchrony.md)**
+👉 **Next Chapter: [Chapter 15 — The Illusion of Global Clock Time](/book/part-03-time-space-asynchrony/chapter-15-illusion-of-global-clock-time.md)**

@@ -158,4 +158,4 @@ then compute true ETAs across the physical road graph.
 
 *How do event-sourced state machines reconcile discrepancies between the messy physical world and the digital database?*
 
-👉 **Next: [Chapter 18 — The Lost Container: Logistics, Supply Chains & Event Sourcing](file:///Users/lspl487/Desktop/software-book/book/part-03-time-space-asynchrony/chapter-18-logistics-event-sourcing.md)**
+👉 **Next: [Chapter 18 — The Lost Container: Logistics, Supply Chains & Event Sourcing](/book/part-03-time-space-asynchrony/chapter-18-logistics-event-sourcing.md)**

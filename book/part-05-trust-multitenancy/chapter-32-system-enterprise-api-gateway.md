@@ -128,4 +128,4 @@ and sever connections via circuit breakers before failing downstreams take down 
 
 *How do you evaluate boolean and multivariate flag rules locally in nanoseconds without network round-trips, while instantly propagating runtime changes to 10,000 servers?*
 
-👉 **Next: [Chapter 33 — Standalone System: Dynamic Feature Flags & Rollout Engine](file:///Users/lspl487/Desktop/software-book/book/part-05-trust-multitenancy/chapter-33-system-dynamic-feature-flags.md)**
+👉 **Next: [Chapter 33 — Standalone System: Dynamic Feature Flags & Rollout Engine](/book/part-05-trust-multitenancy/chapter-33-system-dynamic-feature-flags.md)**
