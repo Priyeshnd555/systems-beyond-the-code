@@ -104,7 +104,7 @@ flowchart LR
     
     Gateway --> Check{"Active DB Connections for Tenant #1402 < 10?"}
     
-    Check -->|Yes: Under Quota| DB["Acquire Connection from Pool -> Execute"]
+    Check -->|Yes: Under Quota| DB["Acquire Connection from Pool → Execute"]
     Check -->|No: Exceeded Limit| Throttle["HTTP 429 Too Many Requests\n(Or Route to Background Throttled Queue)"]
     
     DB --> Healthy["Other 4,499 Tenants Execute Uninterrupted!"]

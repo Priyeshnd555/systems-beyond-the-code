@@ -48,7 +48,7 @@ flowchart TD
     subgraph ParallelUpload ["Concurrent Resumable Multipart Upload"]
         Slicer --> C1["Chunk 1 (5MB) + MD5 Checksum"] --> S3["Direct to S3 / Object Store"]
         Slicer --> C2["Chunk 2 (5MB) + MD5 Checksum"] --> S3
-        Slicer --> C491["Chunk 491 (5MB) [FAILS ON SATELLITE DROP]"]
+        Slicer --> C491["Chunk 491 (5MB) (FAILS ON SATELLITE DROP)"]
     end
     
     C491 --> Retry["Retry ONLY Chunk 491!\n(Re-uploads 5MB in 4 seconds instead of 3GB)"]

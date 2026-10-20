@@ -25,7 +25,7 @@ flowchart TD
     subgraph Disaster ["00:00:00 (TTL Expires: The Stampede)"]
         T2["50,000 req/sec"] --> R2["Redis: Key Expired (MISS)"]
         R2 --> DB["50,000 Concurrent Queries Hit Database"]
-        DB --> Crash["DB Connection Pool Exhausted\nCPU 100% -> Crash Reboot"]
+        DB --> Crash["DB Connection Pool Exhausted\nCPU 100% → Crash Reboot"]
     end
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

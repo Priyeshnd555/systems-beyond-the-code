@@ -93,8 +93,8 @@ Where $v_i$ is the number of events that node $i$ has observed.
 
 ```mermaid
 graph TD
-    Root["Initial State: V = [0, 0]"] --> E1["Node 1 Writes: V = [1, 0]"]
-    Root --> E2["Node 2 Writes: V = [0, 1]"]
+    Root["Initial State: V = (0, 0)"] --> E1["Node 1 Writes: V = (1, 0)"]
+    Root --> E2["Node 2 Writes: V = (0, 1)"]
     
     E1 --> Conflict{"Compare Vectors:\nNeither vector dominates!\n[1, 0] vs [0, 1]"}
     E2 --> Conflict
@@ -120,7 +120,7 @@ Google installed **Atomic Clocks and GPS receivers** in every datacenter:
 
 ```mermaid
 flowchart LR
-    GPS["GPS Receivers + Atomic Rubidium Clocks"] --> TrueTime["TrueTime API: [Earliest, Latest]\n(Guaranteed Uncertainty ε <= 7ms)"]
+    GPS["GPS Receivers + Atomic Rubidium Clocks"] --> TrueTime["TrueTime API: (Earliest, Latest)\n(Guaranteed Uncertainty ε <= 7ms)"]
     TrueTime --> Wait["Wait-Out-The-Uncertainty Protocol\n(Hold commit for 2ε before releasing lock)"]
     Wait --> Serial["Absolute Linearizability Across Continents!"]
 

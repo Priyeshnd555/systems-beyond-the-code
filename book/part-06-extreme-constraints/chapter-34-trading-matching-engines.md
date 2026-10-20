@@ -20,14 +20,14 @@ Suddenly, the NASDAQ price dropped by $1.80 in 20 milliseconds:
 flowchart TD
     Market["Market Drops -$1.80 in 20ms"] --> Feed["Exchange Multicast Tick Feed"]
     
-    Feed --> HFT["Competitor HFT (C++ / Kernel Bypass)"]
-    Feed --> StaleFirm["Market Maker Service (Java / Go)"]
+    Feed --> HFT["Competitor HFT - Kernel Bypass"]
+    Feed --> StaleFirm["Market Maker Service - Java / Go"]
     
-    StaleFirm -->|14.2ms Garbage Collection Pause!| Frozen["CPU Frozen! Unable to cancel stale orders!"]
+    StaleFirm -->|"14.2ms Garbage Collection Pause"| Frozen["CPU Frozen - Unable to cancel stale orders"]
     
-    HFT -->|Executes in 12 microseconds| Fill["Snipes 320,000 stale resting bids!"]
+    HFT -->|"Executes in 12 microseconds"| Fill["Snipes 320,000 stale resting bids"]
     
-    Frozen --> Wakeup["GC Completes -> Discovers $4.1M Trading Deficit!"]
+    Frozen --> Wakeup["GC Completes: Discovers $4.1M Deficit"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef alert fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;
@@ -41,20 +41,23 @@ flowchart TD
 A matching engine matches orders according to **Price-Time Priority (FIFO)**: best price executes first; ties are broken by order arrival timestamp.
 
 ```mermaid
-flowchart LR
-    subgraph OrderBook ["Level 2 / Level 3 Limit Order Book"]
-        direction TB
-        subgraph Asks ["Asks (Sellers) - Ascending Order"]
-            A1["$100.05 -> [Order #91 (100 sh)] -> [Order #94 (50 sh)]"]
-            A0["$100.01 (Best Ask) -> [Order #88 (500 sh)]"]
-        end
-        Spread["--- Bid/Ask Spread ($0.02) ---"]
-        subgraph Bids ["Bids (Buyers) - Descending Order"]
-            B0["$99.99 (Best Bid) -> [Order #71 (300 sh)] -> [Order #75 (200 sh)]"]
-            B1["$99.95 -> [Order #62 (1,000 sh)]"]
-        end
-        Asks --- Spread --- Bids
+flowchart TD
+    subgraph Asks ["Asks (Sellers) - Ascending Order"]
+        A1["$100.05: Order #91, Order #94"]
+        A0["$100.01 Best Ask: Order #88"]
+        A1 --> A0
     end
+
+    Spread["--- Bid/Ask Spread: $0.02 ---"]
+
+    subgraph Bids ["Bids (Buyers) - Descending Order"]
+        B0["$99.99 Best Bid: Order #71, Order #75"]
+        B1["$99.95: Order #62"]
+        B0 --> B1
+    end
+
+    A0 --> Spread
+    Spread --> B0
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef ask fill:#7c2d12,stroke:#ef4444,stroke-width:1.5px,color:#fecaca;
@@ -83,7 +86,7 @@ flowchart TD
     end
 
     subgraph Core ["2. Pinned CPU Core (Isolation)"]
-        Ring -->|Sequenced Event Ingest (10M msgs/sec)| Engine["Single-Threaded Matching Loop\n(CPU Core Pinned, Zero Locks, Zero Allocations)"]
+        Ring -->|"Sequenced Event Ingest (10M msgs/sec)"| Engine["Single-Threaded Matching Loop\n(CPU Core Pinned, Zero Locks, Zero Allocations)"]
         Engine --> OrderBook[("In-Memory Cache-Aligned Order Book")]
     end
 

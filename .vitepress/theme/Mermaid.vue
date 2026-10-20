@@ -11,6 +11,34 @@ const svg = ref('')
 const error = ref('')
 let renderCount = 0
 
+function sanitizeMermaid(raw: string): string {
+  let code = decodeURIComponent(raw)
+
+  // 1. Replace nested brackets inside quotes ["... [ ... ] ..."] -> ["... ( ... ) ..."]
+  for (let i = 0; i < 5; i++) {
+    code = code.replace(/(\["[^"\]\n]*)\[([^"\]\n]*)\]([^"\n]*"\])/g, '$1($2)$3')
+  }
+
+  // 2. Replace ASCII arrows '->' inside quoted strings ["... -> ..."] with Unicode arrow '→'
+  code = code.replace(/(\["[^"\n]*?)->([^"\n]*?"\])/g, '$1→$2')
+  code = code.replace(/(\["[^"\n]*?)->([^"\n]*?"\])/g, '$1→$2')
+
+  // 3. Fix chained subgraph links
+  code = code.replace('Asks --- Spread --- Bids', 'A0 --- Spread\n        Spread --- B0')
+
+  // 4. Quote unquoted edge labels containing special characters: [()<>]
+  code = code.replace(/([-\.=>]+\|)([^"\|\n]+)(\|)/g, (edgeMatch, prefix, label, suffix) => {
+    let trimmed = label.trim()
+    if (/[()<>]/.test(trimmed)) {
+      let clean = trimmed.replace(/"/g, "'")
+      return `${prefix}"${clean}"${suffix}`
+    }
+    return edgeMatch
+  })
+
+  return code
+}
+
 async function renderDiagram() {
   if (typeof window === 'undefined') return
   try {
@@ -19,15 +47,32 @@ async function renderDiagram() {
       startOnLoad: false,
       theme: isDark.value ? 'dark' : 'neutral',
       securityLevel: 'loose',
-      fontFamily: 'system-ui, -apple-system, sans-serif'
+      fontFamily: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      fontSize: 13,
+      flowchart: {
+        htmlLabels: true,
+        padding: 20,
+        useMaxWidth: true,
+        curve: 'basis'
+      },
+      sequence: {
+        useMaxWidth: true,
+        actorFontSize: 13,
+        messageFontSize: 13
+      },
+      themeVariables: {
+        fontFamily: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        fontSize: '13px'
+      }
     })
-    const decoded = decodeURIComponent(props.code)
+
+    const sanitized = sanitizeMermaid(props.code)
     const id = `mermaid-${Math.random().toString(36).substring(2, 9)}-${++renderCount}`
-    const result = await mermaid.render(id, decoded)
+    const result = await mermaid.render(id, sanitized)
     svg.value = result.svg
     error.value = ''
   } catch (err: any) {
-    console.error('Mermaid render error:', err)
+    console.warn('Mermaid diagram render notice:', err)
     error.value = err?.message || 'Failed to render diagram'
   }
 }
@@ -46,6 +91,7 @@ watch(isDark, () => {
     <div v-if="svg" class="mermaid-diagram" v-html="svg" />
     <div v-else-if="error" class="mermaid-error">
       <span class="error-badge">Diagram Notice</span>
+      <p class="error-msg">Diagram rendering encountered an issue</p>
       <pre>{{ error }}</pre>
     </div>
     <div v-else class="mermaid-loading">
@@ -105,5 +151,20 @@ watch(isDark, () => {
   color: var(--vp-c-danger-1);
   padding: 2px 8px;
   border-radius: 4px;
+}
+
+.error-msg {
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--vp-c-text-2);
+}
+
+.mermaid-error pre {
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 </style>

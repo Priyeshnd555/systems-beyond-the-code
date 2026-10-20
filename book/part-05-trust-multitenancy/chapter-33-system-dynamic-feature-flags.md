@@ -41,7 +41,7 @@ A production-grade feature flag engine operates on **Server-Sent Events (SSE) / 
 ```mermaid
 flowchart TD
     subgraph ControlPlane ["Control Plane (Admin UI & Rule Store)"]
-        Admin["Engineer Flips Flag: canary 1% -> 25%"] --> ControlDB[("Flag Rule Config Store (PostgreSQL)")]
+        Admin["Engineer Flips Flag: canary 1% → 25%"] --> ControlDB[("Flag Rule Config Store (PostgreSQL)")]
         ControlDB --> StreamHub["SSE / WebSocket Streaming Hub"]
     end
 
@@ -50,7 +50,7 @@ flowchart TD
         
         AppThread["Incoming User Request (User: 8492)"] --> SDK["Local Flag SDK"]
         LocalCache --> SDK
-        SDK -->|MurmurHash3 In-Memory Calculation (< 1 microsecond)| Result{"Result: True / False"}
+        SDK -->|"MurmurHash3 In-Memory Calculation (< 1 microsecond)"| Result{"Result: True / False"}
     end
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

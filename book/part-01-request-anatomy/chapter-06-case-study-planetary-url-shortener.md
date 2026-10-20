@@ -9,7 +9,7 @@
 ```mermaid
 flowchart LR
     WriteReq["1,000 Writes/sec\n(POST /shorten)"] --> System["Planetary URL Shortener"]
-    System --> ReadReq["100,000 Reads/sec\n(GET /{code} -> 302 Redirect)"]
+    System --> ReadReq["100,000 Reads/sec\n(GET /{code} → 302 Redirect)"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
 ```
@@ -57,7 +57,7 @@ graph TD
 ```mermaid
 flowchart TD
     User["Global User / Mobile Browser"] --> Anycast["Anycast Edge POP (Cloudflare / Fastly)"]
-    Anycast -->|Edge Cache Hit (85%)| Edge302["Instant HTTP 302 Redirect (<10ms)"]
+    Anycast -->|"Edge Cache Hit (85%)"| Edge302["Instant HTTP 302 Redirect (<10ms)"]
     
     Anycast -->|Edge Cache Miss| Gateway["API Gateway (Envoy) & Rate Limiter"]
     Gateway --> ReadSrv["Redirect Read Service (Go/Rust epoll)"]

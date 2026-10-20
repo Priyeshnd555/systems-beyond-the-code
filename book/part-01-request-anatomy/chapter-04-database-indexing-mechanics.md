@@ -49,10 +49,10 @@ A B+ Tree organizes keys in a balanced hierarchy where every leaf node is linked
 
 ```mermaid
 graph TD
-    Root["Root Page (Node [1000 - 5000 - 9000])"]
-    Root --> I1["Internal Page [1000 - 2500]"]
-    Root --> I2["Internal Page [5000 - 7500]"]
-    Root --> I3["Internal Page [9000 - 12000]"]
+    Root["Root Page (Node (1000 - 5000 - 9000))"]
+    Root --> I1["Internal Page (1000 - 2500)"]
+    Root --> I2["Internal Page (5000 - 7500)"]
+    Root --> I3["Internal Page (9000 - 12000)"]
     
     I2 --> L1["Leaf Page A: Keys 5000-6000\n(Row Pointers)"]
     I2 --> L2["Leaf Page B: Keys 6001-7500\n(Row Pointers)"]

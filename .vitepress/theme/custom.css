@@ -48,9 +48,43 @@ div[class*="language-mermaid"]:hover {
   box-shadow: 0 6px 24px -2px rgba(59, 130, 246, 0.25) !important;
 }
 
-.mermaid svg {
+.mermaid svg,
+.mermaid-diagram svg {
   max-width: 100% !important;
   height: auto !important;
+}
+
+/* Fix Mermaid node text clipping & trimming */
+.mermaid-wrapper foreignObject,
+.mermaid-diagram foreignObject {
+  overflow: visible !important;
+}
+
+.mermaid-wrapper foreignObject div,
+.mermaid-wrapper foreignObject span,
+.mermaid-wrapper .nodeLabel,
+.mermaid-wrapper .label,
+.mermaid-wrapper .edgeLabel,
+.mermaid-diagram foreignObject div,
+.mermaid-diagram foreignObject span,
+.mermaid-diagram .nodeLabel,
+.mermaid-diagram .label,
+.mermaid-diagram .edgeLabel {
+  line-height: 1.35 !important;
+  font-size: 13px !important;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mermaid-wrapper .node foreignObject > div,
+.mermaid-diagram .node foreignObject > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  text-align: center !important;
 }
 
 /* Enhanced Markdown Tables */

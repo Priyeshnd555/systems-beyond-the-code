@@ -43,11 +43,11 @@ Unlike modern cloud microservices, the travel industry operates on **Global Dist
 
 ```mermaid
 graph TD
-    User["Traveler Search: 'SFO -> CDG'"] --> OTA["Online Travel Agency Engine"]
+    User["Traveler Search: 'SFO → CDG'"] --> OTA["Online Travel Agency Engine"]
     
     OTA -->|Look-to-Book Ratio: 500:1| Cache["Route & Fare Cache\n(Redis / Elasticsearch)"]
     
-    OTA -.->|Expensive API Query ($0.03 fee)| GDS["Legacy GDS Mainframes\n(Sabre / Amadeus / EDIFACT over Sockets)"]
+    OTA -.->|"Expensive API Query ($0.03 fee)"| GDS["Legacy GDS Mainframes\n(Sabre / Amadeus / EDIFACT over Sockets)"]
     GDS --> Airline["Airline Inventory Mainframes"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

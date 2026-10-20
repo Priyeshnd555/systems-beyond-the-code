@@ -23,10 +23,10 @@ flowchart TD
     Candidate -->|Network Drops for 4 Mins| AutoSave["Auto-Save REST Request"]
     AutoSave -->|Fails! HTTP Connection Error| Panic["Candidate Hits F5 (Refresh)"]
     
-    Panic --> Wiped["Browser Memory Reset -> Entire Essay Lost Forever!"]
+    Panic --> Wiped["Browser Memory Reset → Entire Essay Lost Forever!"]
     
     Candidate2["Candidate Waits for Reconnect"] -->|Submits at Min 124| Backend["Server Wall-Clock Check"]
-    Backend -->|Server Time > 120 Mins| Rejected["403 Forbidden: Submission Disqualified!"]
+    Backend -->|"Server Time > 120 Mins"| Rejected["403 Forbidden: Submission Disqualified!"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef alert fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;

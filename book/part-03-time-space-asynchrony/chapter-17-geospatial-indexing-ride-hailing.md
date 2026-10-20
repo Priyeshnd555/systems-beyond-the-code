@@ -68,12 +68,12 @@ flowchart TD
     Gateway --> IngestWorker["Location Ingest Workers"]
     
     subgraph IngestPipeline ["Ephemeral Spatial Tier"]
-        IngestWorker -->|Compute H3 Hex Index| RedisCluster["Redis Cluster (Memory-Only)\n(Key: 'h3:cell:882a1005' -> Set of Driver IDs)"]
+        IngestWorker -->|Compute H3 Hex Index| RedisCluster["Redis Cluster (Memory-Only)\n(Key: 'h3:cell:882a1005' → Set of Driver IDs)"]
     end
     
     Rider["Rider Taps 'Request Ride'"] --> MatchEngine["Dispatch Match Engine"]
     MatchEngine -->|1. Fetch Rider H3 + k-ring neighbors| RedisCluster
-    RedisCluster -->|2. Return Candidate Driver IDs (<2ms)| MatchEngine
+    RedisCluster -->|"2. Return Candidate Driver IDs (<2ms)"| MatchEngine
     
     MatchEngine --> RouteEngine["Road Network Engine (OSRM / Valhalla)\n(Computes Real Driving ETAs factoring one-ways & traffic)"]
     RouteEngine --> BestMatch["Driver Dispatched: 2-Min ETA!"]

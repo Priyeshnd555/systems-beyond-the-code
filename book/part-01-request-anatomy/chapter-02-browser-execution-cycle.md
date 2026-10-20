@@ -33,7 +33,7 @@ Browsers do not execute code in parallel by default. A single thread coordinates
 flowchart TD
     HTML["HTML Stream Streamed over Wire"] --> Tokenizer["Tokenization & DOM Construction"]
     CSS["CSS Stylesheets"] --> CSSOM["CSSOM Construction (Render Blocking)"]
-    Tokenizer -->|`<script>` encountered| JSBlock["JS Download & Execution\n(MAIN THREAD BLOCKED)"]
+    Tokenizer -->|script tag encountered| JSBlock["JS Download & Execution\n(MAIN THREAD BLOCKED)"]
     JSBlock --> DOM["DOM Tree Built"]
     DOM & CSSOM --> RenderTree["Render Tree (Visible Nodes Only)"]
     RenderTree --> Layout["Layout / Reflow\n(Calculating Geometries)"]

@@ -69,8 +69,8 @@ flowchart TD
         
         RingBuffer --> Sampler{"Tail-Based Sampler Decision"}
         
-        Sampler -->|Error Detected (HTTP 5xx) OR Latency p99 > 1s| Keep["Persist 100% of Failed Trace Spans!"]
-        Sampler -->|Boring Fast 200 OK (< 50ms)| Drop["Retain only 0.1% baseline sample"]
+        Sampler -->|"Error Detected (HTTP 5xx) OR Latency p99 > 1s"| Keep["Persist 100% of Failed Trace Spans!"]
+        Sampler -->|"Boring Fast 200 OK (< 50ms)"| Drop["Retain only 0.1% baseline sample"]
     end
 
     Keep --> APM[("Trace & Metric Store (Tempo / Jaeger / ClickHouse)")]

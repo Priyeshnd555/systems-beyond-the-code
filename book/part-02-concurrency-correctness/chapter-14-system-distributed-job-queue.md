@@ -90,7 +90,7 @@ flowchart TD
     subgraph QueueEngine ["Queue State Machine"]
         Enqueue --> ReadyQ["Ready Queue (FIFO)"]
         Enqueue --> DelayedQ["Delayed / Scheduled Queue\n(Redis Sorted Set by Unix Timestamp)"]
-        DelayedQ -->|Timestamp <= NOW()| ReadyQ
+        DelayedQ -->|"Timestamp <= NOW()"| ReadyQ
     end
     
     subgraph WorkerFleet ["Distributed Worker Fleet"]
@@ -100,7 +100,7 @@ flowchart TD
     end
     
     W1 -.->|Extend Timeout| Heartbeat["Heartbeat Service (For 10-minute long jobs)"]
-    W1 -->|Success| Ack["ACK -> Delete Task"]
+    W1 -->|Success| Ack["ACK → Delete Task"]
     W1 -->|Exceeded Retries| DLQStore["DLQ Storage & Quarantine Dashboard"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

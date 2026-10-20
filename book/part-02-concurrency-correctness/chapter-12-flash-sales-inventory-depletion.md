@@ -32,7 +32,7 @@ flowchart TD
     end
     
     DB --> HotRowContention
-    Queue --> Crash["Connection Pool Exhausted\nUnrelated Queries Blocked -> Total Site Outage"]
+    Queue --> Crash["Connection Pool Exhausted\nUnrelated Queries Blocked → Total Site Outage"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef alert fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;
@@ -55,8 +55,8 @@ flowchart TD
     Gateway --> Redis["Redis Cluster (product:12:stock = 500)"]
     
     subgraph EdgeDecision ["Atomic Lua Decrement (<0.5ms)"]
-        Redis -->|DECRBY >= 0 (First 500)| Winner["WINNER (500 Requests)\nToken Granted -> Allowed into Checkout"]
-        Redis -->|DECRBY < 0 (Remaining 499,500)| Loser["LOSER (499,500 Requests)\nImmediate HTTP 410 'Sold Out'"]
+        Redis -->|"DECRBY >= 0 (First 500)"| Winner["WINNER (500 Requests)\nToken Granted → Allowed into Checkout"]
+        Redis -->|"DECRBY < 0 (Remaining 499,500)"| Loser["LOSER (499,500 Requests)\nImmediate HTTP 410 'Sold Out'"]
     end
     
     Winner --> AsyncQueue["Kafka Order Queue"]
@@ -96,7 +96,7 @@ graph TD
     Parent --> S2["Shard 2 (Stock: 50)"]
     Parent --> S9["Shard 9 (Stock: 50)"]
     
-    Req["Incoming User"] -->|hash(user_id) % 10| TargetShard["Target Shard 2"]
+    Req["Incoming User"] -->|"hash(user_id) % 10"| TargetShard["Target Shard 2"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
 ```

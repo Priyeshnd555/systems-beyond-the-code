@@ -95,7 +95,7 @@ flowchart LR
     
     DND -->|Awake| Frequency{"Check Redis Frequency Cap:\nMarketing Msgs Today < 2?"}
     Frequency -->|Limit Reached| Suppress["Silent Suppression: Drop Marketing Message"]
-    Frequency -->|Quota Available| Allow["INCR user:991:marketing:count -> DISPATCH!"]
+    Frequency -->|Quota Available| Allow["INCR user:991:marketing:count → DISPATCH!"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef reject fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;

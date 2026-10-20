@@ -43,10 +43,10 @@ Relational B-Trees index whole values. To answer prefix queries in sub-milliseco
 graph TD
     Root["Root ()"] --> N["Node 'n'"]
     N --> NI["Node 'ni'"]
-    NI --> NIK["Node 'nik'\n[Top-3: 'nike', 'nike air', 'nikon']"]
+    NI --> NIK["Node 'nik'\n(Top-3: 'nike', 'nike air', 'nikon')"]
     
-    NIK --> NIKE["Node 'nike'\n[Top-3: 'nike', 'nike air', 'nike shoes']"]
-    NIK --> NIKON["Node 'nikon'\n[Top-3: 'nikon camera', 'nikon d850']"]
+    NIK --> NIKE["Node 'nike'\n(Top-3: 'nike', 'nike air', 'nike shoes')"]
+    NIK --> NIKON["Node 'nikon'\n(Top-3: 'nikon camera', 'nikon d850')"]
     
     NIKE --> AIR["Node 'nike air'"]
 
@@ -83,7 +83,7 @@ Overlapping Grams: ["sne", "ker"] -> Matches "sneaker" with 2 edits!
 
 ```mermaid
 flowchart LR
-    Typo["Mistyped Query: 'sneekers'"] --> Grams["Extract 3-Grams\n(['sne', 'nee', 'eek', 'ker'])"]
+    Typo["Mistyped Query: 'sneekers'"] --> Grams["Extract 3-Grams\n(('sne', 'nee', 'eek', 'ker'))"]
     Grams --> InvIdx["Inverted Index Lookup\n(Cosine / Jaccard Similarity)"]
     InvIdx --> Corrected["Instant Typo Correction: 'Did you mean sneakers?' (<8ms)"]
 
@@ -99,7 +99,7 @@ flowchart LR
 ```mermaid
 flowchart TD
     Client["Client Mobile App (Debounce: 150ms)"] --> Edge["Edge CDN (Cloudflare POP)"]
-    Edge -->|Cache Hit (Top 5% 2-Letter Prefixes)| EdgeReturn["Instant Edge Response (<5ms)"]
+    Edge -->|"Cache Hit (Top 5% 2-Letter Prefixes)"| EdgeReturn["Instant Edge Response (<5ms)"]
     
     Edge -->|Cache Miss| Gateway["API Gateway"]
     Gateway --> TrieFleet["In-Memory Trie Fleet (Go / Rust)\n(Sharded by Prefix Hash: 'hash(prefix) % N')"]

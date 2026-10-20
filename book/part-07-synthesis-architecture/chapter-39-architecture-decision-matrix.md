@@ -77,12 +77,12 @@ flowchart LR
     F1 -->|Eventual Consistency OK| DB2["NoSQL / Event-Sourced DynamoDB"]
     
     DB1 & DB2 --> F2{"2. Latency Ceiling SLA?"}
-    F2 -->|< 1ms| InMem["In-Memory Disruptor / Redis Cluster"]
-    F2 -->|< 50ms| FastOLTP["PostgreSQL / Read Replicas"]
+    F2 -->|"< 1ms"| InMem["In-Memory Disruptor / Redis Cluster"]
+    F2 -->|"< 50ms"| FastOLTP["PostgreSQL / Read Replicas"]
     
     InMem & FastOLTP --> F3{"3. Team Topology & Conway's Law"}
-    F3 -->|< 20 Engineers| Mono["Modular Monolith (Single Deployable)"]
-    F3 -->|> 100 Engineers| Micro["Bounded Context Microservices"]
+    F3 -->|"< 20 Engineers"| Mono["Modular Monolith (Single Deployable)"]
+    F3 -->|"> 100 Engineers"| Micro["Bounded Context Microservices"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef highlight fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#a7f3d0;

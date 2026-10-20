@@ -12,9 +12,9 @@ Yet, analytics sounded an alarm: **38% of mobile shoppers in Berlin and London a
 
 ```mermaid
 flowchart TD
-    User(["Shopper types 'checkout.store.com' & hits Enter"]) --> DNS["1. DNS Resolution\n(Local Cache -> Recursive -> Authoritative: 180ms)"]
-    DNS --> TCP["2. TCP 3-Way Handshake\n(SYN -> SYN-ACK -> ACK: 140ms RTT)"]
-    TCP --> TLS["3. TLS 1.3 Cryptographic Handshake\n(ClientHello + Key Share -> ServerHello: 140ms RTT)"]
+    User(["Shopper types 'checkout.store.com' & hits Enter"]) --> DNS["1. DNS Resolution\n(Local Cache → Recursive → Authoritative: 180ms)"]
+    DNS --> TCP["2. TCP 3-Way Handshake\n(SYN → SYN-ACK → ACK: 140ms RTT)"]
+    TCP --> TLS["3. TLS 1.3 Cryptographic Handshake\n(ClientHello + Key Share → ServerHello: 140ms RTT)"]
     TLS --> HTTP["4. Encrypted HTTP/2 Request Dispatched\n(GET /checkout: 140ms RTT)"]
     HTTP --> Srv["5. Origin Server Execution\n(DB Query: 12ms)"]
     Srv --> FirstByte(["First Byte Arrives at Browser: Total 612ms!"])

@@ -74,9 +74,9 @@ flowchart TD
     subgraph Loop ["The Operator Reconciliation Loop"]
         Informer["SharedInformer (Delta FIFO Queue)"] --> Reconcile{"Compare:\nDesired State vs Actual State"}
         
-        Reconcile -->|Desired == Actual (3 == 3)| Idle["No Operation (Sleep)"]
-        Reconcile -->|Desired > Actual (3 > 2)| ScaleUp["Call Cloud Provider: Provision 1 Pod"]
-        Reconcile -->|Desired < Actual (3 < 4)| ScaleDown["Graceful Eviction: Terminate 1 Pod"]
+        Reconcile -->|"Desired == Actual (3 == 3)"| Idle["No Operation (Sleep)"]
+        Reconcile -->|"Desired > Actual (3 > 2)"| ScaleUp["Call Cloud Provider: Provision 1 Pod"]
+        Reconcile -->|"Desired < Actual (3 < 4)"| ScaleDown["Graceful Eviction: Terminate 1 Pod"]
     end
 
     etcd -.-> Informer

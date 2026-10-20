@@ -55,7 +55,7 @@ graph TD
         LP1["Client opens HTTP request; Server holds socket until message arrives"] --> LP2["High header overhead on reconnection"]
     end
     subgraph SSE ["3. Server-Sent Events (SSE)"]
-        SSE1["Single unidirectional HTTP stream (Server -> Client)"] --> SSE2["Ultra-lightweight over HTTP/2; cannot send upstream data"]
+        SSE1["Single unidirectional HTTP stream (Server → Client)"] --> SSE2["Ultra-lightweight over HTTP/2; cannot send upstream data"]
     end
     subgraph WebSockets ["4. WebSockets"]
         WS1["Bi-directional full-duplex TCP stream (RFC 6455)"] --> WS2["Sub-millisecond latency; requires custom connection routing"]
@@ -77,7 +77,7 @@ When 5,000,000 concurrent users connect to 50 WebSocket servers, how does Server
 ```mermaid
 flowchart TD
     Alice["Alice (Sends to Bob)"] --> WS1["WebSocket Node 1"]
-    WS1 --> Reg["Redis / Memcached Connection Registry\n(Hash: 'user:bob' -> 'ws_node_48')"]
+    WS1 --> Reg["Redis / Memcached Connection Registry\n(Hash: 'user:bob' → 'ws_node_48')"]
     
     WS1 --> Broker["Message Broker / Redis Pub-Sub\n(Channel: 'ws_node_48')"]
     Broker --> WS48["WebSocket Node 48"]
@@ -102,8 +102,8 @@ flowchart LR
     subgraph ClientValidation ["Client-Side Gap Detection"]
         Recv["Client Receives Msg #103\n(Expected: #101)"] --> Gap{"Is Msg Seq == Expected?"}
         Gap -->|No: Gap Detected!| Buffer["Hold Msg #103 in Memory Buffer\nDO NOT RENDER ON SCREEN"]
-        Buffer --> CatchUp["Fetch Range [101, 102] via REST API: GET /messages?from=101&to=102"]
-        CatchUp --> Render["Render in Strict Sequence: #101 -> #102 -> #103"]
+        Buffer --> CatchUp["Fetch Range (101, 102) via REST API: GET /messages?from=101&to=102"]
+        CatchUp --> Render["Render in Strict Sequence: #101 → #102 → #103"]
     end
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

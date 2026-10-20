@@ -105,10 +105,10 @@ Improper locking introduces a catastrophic failure mode: **Deadlock**, where thr
 
 ```mermaid
 flowchart TD
-    T1["Thread 1 (Transfer A -> B)"] -->|Holds| LA["Lock A (Account 101)"]
+    T1["Thread 1 (Transfer A → B)"] -->|Holds| LA["Lock A (Account 101)"]
     LA -->|Wants| LB["Lock B (Account 202)"]
     
-    T2["Thread 2 (Transfer B -> A)"] -->|Holds| LB
+    T2["Thread 2 (Transfer B → A)"] -->|Holds| LB
     LB -->|Wants| LA
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;

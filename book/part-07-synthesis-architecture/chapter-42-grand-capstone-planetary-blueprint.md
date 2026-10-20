@@ -72,7 +72,7 @@ Across every domain in this book, five universal physical laws govern systems at
 flowchart LR
     Inv["The 5 Master Invariants"]
     
-    Inv --> I1["1. The Speed-of-Light Invariant\nLight in fiber takes 67ms London->Tokyo.\nPartition by region; never do global synchronous ACID."]
+    Inv --> I1["1. The Speed-of-Light Invariant\nLight in fiber takes 67ms London→Tokyo.\nPartition by region; never do global synchronous ACID."]
     Inv --> I2["2. The Correctness Invariant\nMoney is an append-only immutable ledger.\nDouble-entry sum-zero; never overwrite a balance in place."]
     Inv --> I3["3. The Determinism Invariant\nAI models are probabilistic reasoning engines;\nenforce business truth through deterministic code gates."]
     Inv --> I4["4. The Zero-Network Edge Invariant\nEvaluate flags and auth locally via cached public keys;\nnever put an RPC on the request critical path."]

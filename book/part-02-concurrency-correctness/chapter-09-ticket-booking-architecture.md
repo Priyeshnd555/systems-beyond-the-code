@@ -90,8 +90,8 @@ flowchart TD
     
     subgraph FastTier ["Tier 1: Redis Fast In-Memory Reservation"]
         Edge -->|Atomic Hold Request| Redis["Redis Cluster (SET seat:14B user_123 EX 600 NX)"]
-        Redis -->|Key Set (Winner)| HoldOK["Hold Granted! 10-Minute Cart Timer Begins"]
-        Redis -->|Key Exists (Loser)| SeatTaken["Immediate HTTP 409 Conflict: Seat Taken"]
+        Redis -->|"Key Set (Winner)"| HoldOK["Hold Granted! 10-Minute Cart Timer Begins"]
+        Redis -->|"Key Exists (Loser)"| SeatTaken["Immediate HTTP 409 Conflict: Seat Taken"]
     end
     
     subgraph SlowTier ["Tier 2: Relational Durability"]

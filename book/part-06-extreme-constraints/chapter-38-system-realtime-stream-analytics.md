@@ -18,7 +18,7 @@ flowchart TD
     Attack["Fraud Syndicate Injects 45,000 Micro-Transactions"] --> Ingress["Payment Gateway"]
     Ingress --> DB[("PostgreSQL Transaction DB")]
     
-    DB -->|Hourly Batch ETL Cron (Scheduled for 14:00)| ETL["Batch Airflow / Data Warehouse"]
+    DB -->|"Hourly Batch ETL Cron (Scheduled for 14:00)"| ETL["Batch Airflow / Data Warehouse"]
     
     ETL -->|3-Hour Processing Delay!| Dash["BI Dashboard (Shows 'Normal' at 12:00)"]
     

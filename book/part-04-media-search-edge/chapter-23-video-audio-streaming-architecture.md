@@ -100,8 +100,8 @@ Video segments are **immutable static files**. Segment 14 of 1080p video will ne
 ```mermaid
 flowchart LR
     TenMillion["15,000,000 Concurrent Viewers"] --> Edge["CDN Edge POPs (10,000 Edge Nodes)"]
-    Edge -->|Cache Hit (99.8%)| Instant["Instant Segment Delivery (<15ms)"]
-    Edge -.->|Cache Miss (First Fetch Only)| Origin["Video Packager Origin Server\n(Absorbs only 0.2% of total traffic!)"]
+    Edge -->|"Cache Hit (99.8%)"| Instant["Instant Segment Delivery (<15ms)"]
+    Edge -.->|"Cache Miss (First Fetch Only)"| Origin["Video Packager Origin Server\n(Absorbs only 0.2% of total traffic!)"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef success fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#a7f3d0;

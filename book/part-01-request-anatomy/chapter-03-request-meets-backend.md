@@ -96,7 +96,7 @@ Putting application workers directly on the open internet exposes them to the **
 ```mermaid
 flowchart LR
     Clients["Slow Mobile Clients\n(3G/4G, High Latency)"] -->|Slow HTTP Streams| Nginx["Reverse Proxy (Nginx / Envoy)\n(epoll-driven, buffers entire payload)"]
-    Nginx -->|Fast Local Pipe (HTTP/1.1 or gRPC)| Backend["App Service Worker\n(Receives fully buffered request, executes in 2ms)"]
+    Nginx -->|"Fast Local Pipe (HTTP/1.1 or gRPC)"| Backend["App Service Worker\n(Receives fully buffered request, executes in 2ms)"]
 ```
 
 ### Production Ingress Rules:

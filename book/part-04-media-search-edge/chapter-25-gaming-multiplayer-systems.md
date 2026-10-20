@@ -43,7 +43,7 @@ graph TD
         P1["Packet 1 (Player Pos at t=0)"] --> P2["Packet 2 (DROPPED BY WIFI!)"]
         P2 --> P3["Packet 3 (Player Pos at t=32ms)"]
         P3 --> P4["Packet 4 (Player Pos at t=48ms)"]
-        Note1["TCP halts everything waiting for Packet 2 retransmission!<br/>Game freezes for 180ms -> Massive Rubber-banding!"]
+        Note1["TCP halts everything waiting for Packet 2 retransmission!<br/>Game freezes for 180ms → Massive Rubber-banding!"]
     end
     subgraph UDPVirtue ["UDP / WebTransport (Connectionless)"]
         U1["Packet 1: Pos at t=0"]

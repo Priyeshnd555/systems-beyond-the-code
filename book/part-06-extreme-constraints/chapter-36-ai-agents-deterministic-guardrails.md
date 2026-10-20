@@ -75,7 +75,7 @@ flowchart TD
     
     ProposedAction --> InvariantGate{"4. Deterministic Invariant Gatekeeper"}
     
-    InvariantGate -->|Rule Violation: Discount > 20%| HITL["5. Human-in-the-Loop Escalation Queue"]
+    InvariantGate -->|"Rule Violation: Discount > 20%"| HITL["5. Human-in-the-Loop Escalation Queue"]
     InvariantGate -->|Valid Business Invariant| Exec["6. Sandboxed Tool Execution Engine"]
     
     Exec --> Database[("Authoritative Transactional Ledger")]

@@ -48,8 +48,8 @@ flowchart TD
     
     Router --> CircuitBreaker{"5. Circuit Breaker\n(Downstream Health Check)"}
     
-    CircuitBreaker -->|Closed (Healthy)| Upstream["6. Protocol Translation (gRPC) & Forward to Microservice"]
-    CircuitBreaker -->|Open (Failing)| Fallback["HTTP 503 Service Unavailable / Cached Fallback"]
+    CircuitBreaker -->|"Closed (Healthy)"| Upstream["6. Protocol Translation (gRPC) & Forward to Microservice"]
+    CircuitBreaker -->|"Open (Failing)"| Fallback["HTTP 503 Service Unavailable / Cached Fallback"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef alert fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;

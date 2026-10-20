@@ -18,11 +18,11 @@ The region remained dark for **9 hours**.
 
 ```mermaid
 flowchart TD
-    Glitch["500ms Network Blip: Cache Unreachable"] --> Miss["Cache Miss Stampede -> Hits PostgreSQL"]
+    Glitch["500ms Network Blip: Cache Unreachable"] --> Miss["Cache Miss Stampede → Hits PostgreSQL"]
     
-    Miss --> Saturated["DB Saturated: Latency Spikes -> Requests Timeout"]
+    Miss --> Saturated["DB Saturated: Latency Spikes → Requests Timeout"]
     
-    Saturated --> RetryStorm["Unjittered Retries (3x per client) -> 15x Traffic Multiplier!"]
+    Saturated --> RetryStorm["Unjittered Retries (3x per client) → 15x Traffic Multiplier!"]
     
     RetryStorm --> Locked["Database IOPS Exhaustion & CPU Lockup (100%)"]
     

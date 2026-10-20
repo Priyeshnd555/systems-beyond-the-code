@@ -18,13 +18,13 @@ During a catastrophic solar storm, cellular tower relays across a 1,200-mile des
 flowchart TD
     CellDown["18-Day Cellular Blackout"] --> Sensors["60,000 Remote Sensors (256KB RAM)"]
     
-    Sensors --> FlashFull["Local Flash Overflow -> Drops Critical Anomaly Spikes!"]
-    Sensors --> BatteryDead["Continuous Retry Loop -> Drains 4,200 Batteries to 0%!"]
+    Sensors --> FlashFull["Local Flash Overflow → Drops Critical Anomaly Spikes!"]
+    Sensors --> BatteryDead["Continuous Retry Loop → Drains 4,200 Batteries to 0%!"]
     
     CellUp["Network Restores at 14:00"] --> Surge["55,000 Devices Connect at the Exact Same Second!"]
     
     Surge --> Broker["Central MQTT Broker Cluster"]
-    Broker --> Crash["Connection Flood & Out-of-Order Deluge -> Entire Cloud Ingest Crashes!"]
+    Broker --> Crash["Connection Flood & Out-of-Order Deluge → Entire Cloud Ingest Crashes!"]
 
     classDef default fill:#1e293b,stroke:#3b82f6,stroke-width:1.5px,color:#f8fafc;
     classDef alert fill:#7c2d12,stroke:#ef4444,stroke-width:2px,color:#fecaca;
